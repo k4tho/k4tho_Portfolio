@@ -50,7 +50,10 @@ export function Introduction() {
       </div>
 
       <div className="intro-photo" role="img" aria-label="Profile photo placeholder">
-        <img src="/public/IMG_3178.jpg" alt="Photo" />
+        <img
+          src={`${import.meta.env.BASE_URL}IMG_3178.jpg`}
+          alt="Katie Ho"
+        />
       </div>
     </section>
   )
