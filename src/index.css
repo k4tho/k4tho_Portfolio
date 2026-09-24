@@ -1,0 +1,54 @@
+:root {
+  --navy: #4a2f2a;
+  --blue: #c66b52;
+  --muted-blue: #8c695d;
+  --pale-blue: #f8e8dc;
+  --border: #e7cdbd;
+  --background: #fffaf5;
+  --content-width: 1020px;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  --serif: Georgia, 'Times New Roman', serif;
+
+  color: var(--navy);
+  background: var(--background);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% 10%, rgb(220 143 109 / 10%), transparent 24rem),
+    var(--background);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a:focus-visible {
+  outline: 3px solid rgb(198 107 82 / 35%);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+::selection {
+  color: #ffffff;
+  background: var(--blue);
+}
